@@ -27,7 +27,7 @@ module.exports = () => {
     }
   })
 
-  app.post('/success-url', (req, res, next) => {
+  app.get('/success-url', (req, res, next) => {
     try {
       handleResponse(req, res)
 
@@ -40,7 +40,7 @@ module.exports = () => {
     }
   })
 
-  app.post('/fail-url', (req, res, next) => {
+  app.get('/fail-url', (req, res, next) => {
     try {
       handleResponse(req, res)
 
