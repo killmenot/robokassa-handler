@@ -2,7 +2,6 @@
 
 const http = require('http')
 const express = require('express')
-const bodyParser = require('body-parser')
 
 function handleResponse (req, res) {
   console.log('req.headers', req.headers)
@@ -13,7 +12,7 @@ function handleResponse (req, res) {
 module.exports = () => {
   const app = express()
 
-  app.use(bodyParser.json())
+  app.use(express.urlencoded({ extended: false }));
 
   app.post('/result-url', (req, res, next) => {
     try {
