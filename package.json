@@ -1,0 +1,32 @@
+{
+  "name": "robokassa-handler",
+  "version": "1.0.0",
+  "main": "server.js",
+  "description": "A test sandbox for Robokassa handler",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:killmenot/robokassa-handler"
+  },
+  "author": "Alexey Kucherenko <alexei.kucherenko@gmail.com>",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js",
+    "lint": "eslint app.js server.js --fix"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-robokassa": "github:classuper/node-robokassa"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.2"
+  }
+}
